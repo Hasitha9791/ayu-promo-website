@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Ayu Health Suite – Advanced Clinic Management & EMR Software</title>
+  <meta name="title" content="Ayu Health Suite – Clinic Management & Electronic Medical Records Platform" />
+  <meta name="description" content="Ayu Health Suite is a premium cloud-connected clinical platform built for modern practices. Streamline onboarding, consultations, queue tokens, inventory, billing, presets, and follow-ups." />
+  <meta name="keywords" content="EMR, clinic management system, doctor consultations, electronic health records, prescription templates, clinic billing, medical inventory, Axentratech, Sri Lanka" />
+  <meta name="author" content="Axentratech Software Solutions" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ayu Health Suite – All-in-One Clinic Management Platform" />
+  <meta property="og:description" content="Streamline consultations, manage token queues, schedule follow-ups, and auto-generate invoice totals using diagnosis-based drug presets. Developed by Axentratech Software Solutions." />
+  <meta property="og:image" content="https://www.axentratech.com/assets/favicon.png" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER SCREEN ===== -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <img src="assets/logo.jpeg" alt="Ayu Health Suite Logo" class="preloader-logo" />
+        <div class="preloader-logo-glow"></div>
+      </div>
+      <h2 class="preloader-brand">Ayu <span class="preloader-accent">Health Suite</span></h2>
+      <p class="preloader-subtitle">BY AXENTRATECH</p>
+      
+      <div class="preloader-progress-container">
+        <div class="preloader-progress-bar"></div>
+      </div>
+      <p class="preloader-status-text">Initializing Clinical Workspace...</p>
+    </div>
+  </div>
+
+  <!-- ===== GLOBAL BACKGROUND ORBS & LIVE GRAPHICS ===== -->
+  <div class="blob-bg blob-1" aria-hidden="true"></div>
+  <div class="blob-bg blob-2" aria-hidden="true"></div>
+  <div class="blob-bg blob-3" aria-hidden="true"></div>
+
+  <!-- Tech Grid Background Lines (SITS/Neuros inspired) -->
+  <div class="body-lines" aria-hidden="true">
+    <div class="body-line body-line-1"></div>
+    <div class="body-line body-line-2"></div>
+    <div class="body-line body-line-3"></div>
+    <div class="body-line body-line-4"></div>
+  </div>
+
+  <!-- Interactive Particles Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVIGATION NAVBAR ===== -->
+  <header id="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Ayu Health Suite Home">
+        <img src="assets/logo.jpeg" alt="Ayu Health Suite Logo" class="logo-image" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--primary); box-shadow: var(--shadow-sm);" />
+        <div class="logo-brand-block" style="display: flex; flex-direction: column; margin-left: 0.5rem;">
+          <span class="logo-text" style="font-weight: 800; font-family: var(--font-heading); color: var(--secondary); font-size: 1.3rem; line-height: 1.15;">Ayu <span style="font-weight: 500; color: var(--primary);">Health Suite</span></span>
+          <span class="logo-subtext" style="font-size: 0.65rem; color: var(--text-muted); font-weight: 700; letter-spacing: 0.05em; margin-top: 0.1rem;">BY AXENTRATECH</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#features" class="nav-link" role="menuitem">Modules</a></li>
+        <li role="none"><a href="#showcase" class="nav-link" role="menuitem">How It Works</a></li>
+        <li role="none"><a href="#booking" class="nav-link" role="menuitem">Book Demo</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <a href="#booking" class="btn btn-primary nav-cta">Book Free Demo</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero" aria-label="Ayu Health Suite Hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>PROUDLY POWERED BY AXENTRATECH</span>
+          </div>
+          <h1 class="hero-title">
+            Transform Your Clinic with <span class="gradient-text">Ayu Health Suite</span>
+          </h1>
+          <p class="hero-subtitle" style="font-size: 1.1rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 2rem;">
+            An advanced, cloud-connected Clinical Suite and Electronic Medical Records (EMR) platform designed for healthcare excellence. Accelerate patient consultation routing, automate pricing with templates, track follow-ups, and trigger WhatsApp invoices.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary btn-lg" style="padding: 0.95rem 1.8rem;">Book a Live Demo</a>
+            <a href="#features" class="btn btn-outline btn-lg" style="padding: 0.95rem 1.8rem;">Explore Modules</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>20+</h3>
+              <p>Active Clinics</p>
+            </div>
+            <div class="stat-item">
+              <h3>15k+</h3>
+              <p>Consultations</p>
+            </div>
+            <div class="stat-item">
+              <h3>99.9%</h3>
+              <p>Cloud Uptime</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="mockup-container">
+            <div class="mockup-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span style="margin-left: auto; font-family: monospace; font-size: 0.72rem; color: #64748b;">Ayu_Health_Suite_v1.0.exe</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-line accent">[System Initialized] Connecting to Supabase Cloud Database...</div>
+              <div class="mockup-line white">&gt; Active Operator = "Dr. Hasitha (Admin)"</div>
+              <div class="mockup-line">&gt; Current Active Module = "Doctor Consultations"</div>
+              <div class="mockup-line accent">&gt; Loading Diagnosis Template = "Acute Bronchitis"</div>
+              <div class="mockup-line">- Prescribed: Paracetamol 500mg (Qty: 15)</div>
+              <div class="mockup-line">- Prescribed: Amoxicillin 250mg (Qty: 20)</div>
+              <div class="mockup-line white">&gt; Auto-checking Stock Inventory... All stocks OK.</div>
+              <div class="mockup-line accent">&gt; generating billing receipt... total computed.</div>
+              <div class="mockup-line">&gt; executing automated WhatsApp notification... sent successfully.</div>
+              <div class="mockup-line white">&gt; system status = "Ayu Health Suite Online"</div>
+            </div>
+          </div>
+
+          <!-- Floating Interactive badges -->
+          <div class="floating-card card-1">
+            <div class="floating-card-icon"><i class="fa-solid fa-calculator"></i></div>
+            <div class="floating-card-text">
+              <p>Smart Presets</p>
+              <span>Auto-billing Templates</span>
+            </div>
+          </div>
+
+          <div class="floating-card card-2">
+            <div class="floating-card-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="floating-card-text">
+              <p>Follow-Up Planner</p>
+              <span>Overdue & Upcoming Alerts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES / MODULES SECTION ===== -->
+    <section id="features" class="features" aria-label="System Core Modules">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge"><span class="badge-dot"></span><span>Ayu System Modules</span></div>
+          <h2>Fully Loaded Clinical Ecosystem</h2>
+          <p>Every single screen is built with modern workflows to help your clinic achieve zero administrative overhead, optimized patient care, and flawless inventory control.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-address-card"></i></div>
+            <h3>Patient Onboarding & EMR</h3>
+            <p>Register new patients inside a streamlined EMR wizard. Maintain detailed profiles, contact numbers, and view complete history logs including past vital records, symptom cards, and billing summaries.</p>
+            <button class="feature-link-btn" data-module="emr" aria-label="Read more about Patient Onboarding & EMR">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-list-ol"></i></div>
+            <h3>Token Queue & Appointments</h3>
+            <p>Seamless receptionist check-in flow with automatically computed token queue numbers. Live doctor dashboard updates in real-time, matching queue tokens with active consulting rooms.</p>
+            <button class="feature-link-btn" data-module="queue" aria-label="Read more about Token Queue & Appointments">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-receipt"></i></div>
+            <h3>Real-Time Billing Cart</h3>
+            <p>Generate fully itemized invoices. Directly edit drug unit prices and quantities inside the billing table with instantaneous calculations, split payments (cash/card), and inventory checks.</p>
+            <button class="feature-link-btn" data-module="billing" aria-label="Read more about Real-Time Billing Cart">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-box-open"></i></div>
+            <h3>Stock & Expiry Batches</h3>
+            <p>Maintain detailed inventory logs with custom stock reorder thresholds. Tracks separate batches with specific expiry dates and cost prices. Automatically deducts quantities on invoice creation.</p>
+            <button class="feature-link-btn" data-module="inventory" aria-label="Read more about Stock & Expiry Batches">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-calendar-check"></i></div>
+            <h3>Follow-Up Appointments Tracker</h3>
+            <p>Add "Next Clinic Date" directly inside doctor consultations. Tracks overdue, due today, and upcoming follow-ups in a calendar schedule view, with a one-click consult routing button.</p>
+            <button class="feature-link-btn" data-module="followups" aria-label="Read more about Follow-Up Appointments Tracker">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-comments"></i></div>
+            <h3>WhatsApp Automation</h3>
+            <p>Keep patients updated. Automated WhatsApp templates dispatch queue tokens on register, check-in alerts, receipt invoice links, and scheduled follow-up clinic date reminders.</p>
+            <button class="feature-link-btn" data-module="whatsapp" aria-label="Read more about WhatsApp Automation">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+            <h3>Smart Diagnosis Drug Presets</h3>
+            <p>Allows pre-configuring set drug templates for matching diagnoses. Selecting the diagnosis in billing instantly populates the invoice cart, eliminating manual item typing.</p>
+            <button class="feature-link-btn" data-module="presets" aria-label="Read more about Smart Diagnosis Drug Presets">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>Role-Based Permissions (RBAC)</h3>
+            <p>Configure access for Admins, Doctors, Receptionists, and Cashiers. Administrators can dynamically specify allowed sidebar tabs for each user to maintain data security.</p>
+            <button class="feature-link-btn" data-module="rbac" aria-label="Read more about Role-Based Permissions (RBAC)">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Analytics & Revenue Dashboard</h3>
+            <p>Live stats counters displaying total patient counts, visits, collections, outstanding bills, and cost of goods sold (COGS) to calculate net margins dynamically.</p>
+            <button class="feature-link-btn" data-module="analytics" aria-label="Read more about Analytics & Revenue Dashboard">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERACTIVE SHOWCASE ===== -->
+    <section id="showcase" class="showcase" aria-label="Interactive Showcase">
+      <div class="container showcase-layout">
+        <div class="showcase-desc">
+          <div class="badge"><span class="badge-dot"></span><span>Live Demo Simulator</span></div>
+          <h2>Smart Billing Preset Simulator</h2>
+          <p>See how our diagnosis-based drug presets and real-time POS billing system automatically deduct stock and compute pricing totals inside Ayu Health Suite.</p>
+          
+          <div class="showcase-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Choose a Diagnosis</h4>
+              <p>Pick a condition from the simulator dropdown menu to load a pre-set drug template.</p>
+            </div>
+          </div>
+
+          <div class="showcase-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Auto-Populate Prescriptions</h4>
+              <p>Medications, preset quantities, and units are loaded into the POS billing cart instantly.</p>
+            </div>
+          </div>
+
+          <div class="showcase-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Real-Time Inventory Alert</h4>
+              <p>Watch the system check inventory stocks in real-time and throw warnings if stock is exceeded.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="simulator-card" id="billing-simulator">
+          <div class="simulator-bar">
+            <span class="simulator-title"><i class="fa-solid fa-desktop" style="color: var(--primary);"></i> Ayu Health Suite Billing Simulator</span>
+            <div style="display: flex; gap: 4px;">
+              <span class="dot dot-red" style="width: 6px; height: 6px;"></span>
+              <span class="dot dot-yellow" style="width: 6px; height: 6px;"></span>
+              <span class="dot dot-green" style="width: 6px; height: 6px;"></span>
+            </div>
+          </div>
+          <div class="simulator-body">
+            <div class="sim-input-group">
+              <label class="sim-label" for="sim-diagnosis">Select Patient Diagnosis Preset:</label>
+              <select id="sim-diagnosis" class="sim-select" aria-label="Select Diagnosis Preset">
+                <option value="none">-- No Preset / Empty Cart --</option>
+                <option value="bronchitis">Acute Bronchitis (Cough & Fever)</option>
+                <option value="hypertension">Essential Hypertension (BP Monitoring)</option>
+                <option value="allergy">Allergy (Skin Rash / Sneezing)</option>
+              </select>
+            </div>
+
+            <div class="sim-cart-title">
+              <span>Billing Invoice Items</span>
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">Live calculation</span>
+            </div>
+
+            <div class="sim-table-wrapper" style="max-height: 200px; overflow-y: auto;">
+              <table class="sim-table">
+                <thead>
+                  <tr>
+                    <th>Item Description</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody id="sim-cart-body">
+                  <tr>
+                    <td colspan="4" style="text-align: center; color: var(--text-muted); font-style: italic; padding: 2rem 0;">
+                      Select a diagnosis above to load presets...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div id="sim-stock-alert" class="sim-badge-alert"></div>
+
+            <div class="sim-total-row">
+              <span>Grand Total Amount:</span>
+              <span id="sim-total-price" style="color: var(--primary);">Rs. 0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEMO BOOKING SECTION ===== -->
+    <section id="booking" class="booking" aria-label="Book a Live Demo">
+      <div class="container booking-grid">
+        <div class="booking-desc">
+          <div class="badge"><span class="badge-dot"></span><span>Consultation</span></div>
+          <h2>Ready to Elevate Your Clinic Operations?</h2>
+          <p>Book a free 15-minute live screen-share demo with one of our implementation consultants. Let us show you how Ayu Health Suite fits your custom workflows.</p>
+          
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <span class="benefit-icon"><i class="fa-solid fa-circle-check"></i></span>
+              <div class="benefit-text">
+                <strong>Customized Workflow Walkthrough</strong>
+                <p>We will customize the demo settings to match your specific medical specialty (General Practice, Dental, Pediatrics, etc.).</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <span class="benefit-icon"><i class="fa-solid fa-circle-check"></i></span>
+              <div class="benefit-text">
+                <strong>Free Data Onboarding Strategy</strong>
+                <p>Learn how our software migration experts transfer your existing offline records or Excel lists into Supabase seamlessly.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <span class="benefit-icon"><i class="fa-solid fa-circle-check"></i></span>
+              <div class="benefit-text">
+                <strong>No Obligations / Commitment</strong>
+                <p>Experience the suite completely free of cost. Setup local SQLite in seconds with zero hidden charges.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-card">
+          <h3>Request a Live Demo</h3>
+          <p>Select your preferred slot, and we'll send you a meeting invite link.</p>
+
+          <form id="bookingForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="book-name">Full Name</label>
+              <input type="text" id="book-name" class="form-input" placeholder="e.g. Dr. Kanishka Fernando" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="book-email">Professional Email Address</label>
+              <input type="email" id="book-email" class="form-input" placeholder="e.g. contact@fernandoclinic.lk" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="book-phone">Telephone Number</label>
+                <input type="tel" id="book-phone" class="form-input" placeholder="e.g. +94 77 123 4567" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="book-date">Preferred Date</label>
+                <input type="date" id="book-date" class="form-input" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="book-time">Preferred Time Slot</label>
+              <select id="book-time" class="sim-select" aria-label="Select Preferred Time Slot">
+                <option value="09:00 AM - 10:00 AM">09:00 AM - 10:00 AM</option>
+                <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                <option value="02:00 PM - 03:00 PM">02:00 PM - 03:00 PM</option>
+                <option value="04:00 PM - 05:00 PM">04:00 PM - 05:00 PM</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Confirm Demo Slot Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT & OFFICE INFO SECTION ===== -->
+    <section id="contact" class="contact" aria-label="Contact Axentratech">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="contact-title">
+            <div class="badge"><span class="badge-dot"></span><span>Get In Touch</span></div>
+            <h3>Contact Our Team</h3>
+            <p>Have questions about features, pricing, or custom installations? Contact Axentratech Software Solutions directly.</p>
+          </div>
+
+          <div class="info-cards-stack">
+            <!-- Email -->
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-text">
+                <h4>Email Us</h4>
+                <p><a href="mailto:axentrat@gmail.com">axentrat@gmail.com</a></p>
+              </div>
+            </div>
+
+            <!-- Call -->
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <h4>Call Us</h4>
+                <p><a href="tel:+94771757556">+94 77 175 75 56</a></p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <h4>Office Location</h4>
+                <p>Pannipitiya,<br />Colombo, Sri Lanka</p>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="info-text" style="width: 100%;">
+                <h4>Business Hours</h4>
+                <div class="hours-list" style="margin-top: 0.5rem;">
+                  <div class="hours-row">
+                    <span>Monday – Friday:</span>
+                    <span>9:00 AM – 6:00 PM</span>
+                  </div>
+                  <div class="hours-row">
+                    <span>Saturday:</span>
+                    <span>10:00 AM – 2:00 PM</span>
+                  </div>
+                  <div class="hours-row">
+                    <span>Sunday:</span>
+                    <span>Closed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-card">
+          <h3>Send Us a Message</h3>
+          <p>Drop us your query and we'll get back to you shortly.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Silva" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. contact@silvaclinic.lk" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Customized pricing plans / Installation inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Inquiry / Message Details</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="How can our technical engineers assist you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER SECTION ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 1.5rem;">
+            <img src="assets/logo.jpeg" alt="Ayu Health Suite Logo" class="logo-image" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary);" />
+            <span class="logo-text" style="color: var(--white); font-weight: 800; font-family: var(--font-heading); font-size: 1.25rem; margin-left: 0.5rem;">Ayu <span style="font-weight: 500; color: var(--primary);">Health Suite</span></span>
+          </div>
+          <p>Empowering healthcare facilities with modern Electronic Health Records (EMR), real-time queue tokens, presets, and inventory management solutions.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/company/axentratech" class="social-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/axentratech" class="social-link" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/axentratech" class="social-link" aria-label="Facebook Profile"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.github.com/axentratech" class="social-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Ayu Suite Modules</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">EMR Consultations</a></li>
+            <li><a href="#features" class="footer-link">Diagnosis Templates</a></li>
+            <li><a href="#features" class="footer-link">Token Appointments</a></li>
+            <li><a href="#features" class="footer-link">Editable Invoicing</a></li>
+            <li><a href="#features" class="footer-link">Batch Stocks Control</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Axentratech Services</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.axentratech.com/#services" class="footer-link">Web App Development</a></li>
+            <li><a href="https://www.axentratech.com/#services" class="footer-link">Mobile Apps (iOS & Android)</a></li>
+            <li><a href="https://www.axentratech.com/#services" class="footer-link">Custom EMR Setup</a></li>
+            <li><a href="https://www.axentratech.com/#services" class="footer-link">Supabase Cloud Integration</a></li>
+            <li><a href="https://www.axentratech.com/#contact" class="footer-link">Enterprise Consultation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Axentratech Software Solutions. All Rights Reserved. All specifications are powered and managed by Axentratech.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link" style="font-size: 0.8rem;">Privacy Policy</a>
+          <a href="#" class="footer-link" style="font-size: 0.8rem;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODULE DETAILS MODAL ===== -->
+  <div id="module-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-box module-modal-box">
+      <button class="modal-close-icon" id="module-modal-close" aria-label="Close details">&times;</button>
+      <div class="modal-header-block" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; text-align: left;">
+        <div class="module-modal-icon-container" id="module-modal-icon" style="width: 50px; height: 50px; background-color: var(--primary-glow); color: var(--primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+          <i class="fa-solid fa-address-card"></i>
+        </div>
+        <h3 id="module-modal-title" style="font-size: 1.4rem; color: var(--secondary); margin-bottom: 0;">Module Title</h3>
+      </div>
+      <div class="modal-body-content" id="module-modal-body" style="text-align: left; max-height: 380px; overflow-y: auto; padding-right: 0.5rem; margin-bottom: 1.5rem;">
+        <!-- Detailed content goes here -->
+      </div>
+      <div class="modal-footer-block" style="display: flex; justify-content: flex-end; border-top: 1px solid var(--border); padding-top: 1.25rem;">
+        <button id="module-modal-btn" class="btn btn-primary" style="padding: 0.6rem 2rem;">Got It</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== POPUP SUCCESS MODAL ===== -->
+  <div id="success-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-box">
+      <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 id="modal-title">Request Received!</h3>
+      <p id="modal-text">Thank you. One of our consultants from Axentratech will contact you shortly.</p>
+      <button id="modal-close-btn" class="btn btn-primary" style="padding: 0.6rem 2rem;">Dismiss</button>
+    </div>
+  </div>
+
+  <!-- Custom JS Scripts -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
