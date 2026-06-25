@@ -305,7 +305,25 @@ section {
   height: 2.5px;
   background-color: var(--secondary);
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hamburger animation to X when active */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+.mobile-only-nav-item {
+  display: none;
 }
 
 /* --- Global Background Orbs & Grids --- */
@@ -1401,12 +1419,29 @@ section {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-bottom: 1px solid var(--border);
     z-index: 999;
+    gap: 1.5rem;
   }
   .nav-links.active {
     top: 70px;
   }
   .nav-cta {
-    display: none; /* Hide button on mobile menu, show inside active menu if needed */
+    display: none;
+  }
+  .mobile-only-nav-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-cta-mobile {
+    display: inline-flex;
+    width: 80%;
+    max-width: 280px;
+    margin-top: 0.5rem;
+  }
+  #navbar.scrolled .nav-links {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
   .form-row {
     grid-template-columns: 1fr;
@@ -1423,6 +1458,53 @@ section {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+  }
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  .hero-title {
+    font-size: 2.1rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+  .floating-card {
+    display: none !important; /* Hide floating badges on mobile to prevent overflow bugs */
+  }
+  .hero-stats {
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .stat-item {
+    text-align: center;
+  }
+  .simulator-body {
+    padding: 1rem;
+  }
+  .sim-table th, .sim-table td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.78rem;
+  }
+  .booking-form-card {
+    padding: 1.5rem;
+  }
+  .logo-brand-block {
+    display: none !important; /* Keep only the logo image to save space in tight navbars */
   }
 }
 
