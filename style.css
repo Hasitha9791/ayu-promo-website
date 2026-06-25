@@ -1397,14 +1397,39 @@ section {
     padding: 8rem 0 4rem 0;
   }
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+  .floating-card {
+    display: none !important; /* Hide floating badges on mobile to prevent overflow bugs */
+  }
+  .mockup-container {
+    transform: none !important; /* Disable 3D tilt on mobile to prevent overflow */
   }
   .hero-stats {
     flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: center;
+  }
+  .stat-item {
+    text-align: center;
   }
   .hamburger {
     display: flex;
+  }
+  #navbar .container {
+    z-index: 1002; /* Force navbar container to stack above other containers */
   }
   .nav-links {
     position: fixed;
@@ -1469,29 +1494,7 @@ section {
     padding: 0 1.25rem;
   }
   .hero-title {
-    font-size: 2.1rem;
-  }
-  .hero-subtitle {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-  .hero-actions {
-    flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
-  }
-  .hero-actions .btn {
-    width: 100%;
-  }
-  .floating-card {
-    display: none !important; /* Hide floating badges on mobile to prevent overflow bugs */
-  }
-  .hero-stats {
-    justify-content: space-around;
-    gap: 1rem;
-  }
-  .stat-item {
-    text-align: center;
+    font-size: 1.95rem; /* Even smaller font for tiny mobile devices */
   }
   .simulator-body {
     padding: 1rem;
