@@ -1436,7 +1436,7 @@ section {
     top: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--white);
+    background-color: #ffffff !important;
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 0;
