@@ -41,11 +41,19 @@
 }
 
 /* --- Base Resets & Global Styles --- */
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -53,7 +61,6 @@ body {
   color: var(--text-dark);
   background-color: var(--white);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -875,6 +882,13 @@ section {
   padding: 1.5rem;
 }
 
+.sim-table-wrapper {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .sim-input-group {
   margin-bottom: 1.25rem;
 }
@@ -1393,11 +1407,41 @@ section {
   .section-header h2 {
     font-size: 2rem;
   }
+  .showcase-desc h2,
+  .booking-desc h2 {
+    font-size: 1.75rem;
+  }
+  .contact-title h3 {
+    font-size: 1.6rem;
+  }
   .hero {
     padding: 8rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+  .hero-image-wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;
   }
   .hero-title {
     font-size: 2.3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .hero-subtitle {
     font-size: 1.05rem;
@@ -1432,8 +1476,8 @@ section {
     z-index: 1002; /* Force navbar container to stack above other containers */
   }
   .nav-links {
-    position: fixed;
-    top: -100%;
+    position: absolute;
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: #ffffff !important;
@@ -1445,9 +1489,14 @@ section {
     border-bottom: 1px solid var(--border);
     z-index: 999;
     gap: 1.5rem;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
   }
   .nav-links.active {
-    top: 70px;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
   .nav-cta {
     display: none;
@@ -1464,9 +1513,7 @@ section {
     margin-top: 0.5rem;
   }
   #navbar.scrolled .nav-links {
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: #ffffff !important;
   }
   .form-row {
     grid-template-columns: 1fr;
@@ -1495,6 +1542,12 @@ section {
   }
   .hero-title {
     font-size: 1.95rem; /* Even smaller font for tiny mobile devices */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .badge {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.75rem;
   }
   .simulator-body {
     padding: 1rem;
@@ -1518,8 +1571,8 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: var(--white);
   z-index: 9999;
   display: flex;
