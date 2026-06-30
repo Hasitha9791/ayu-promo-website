@@ -182,8 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Scheduling Demo...';
 
-      // Send POST request to backend email endpoint
-      fetch('http://localhost:5000/api/send-demo-email', {
+      // Send to Resend-powered backend on Hugging Face Spaces
+      fetch('https://hasitha14-clinic-backend.hf.space/api/send-demo-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, phone, date, time })
@@ -192,7 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(data => {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
-
         if (data.success) {
           bookingForm.reset();
           showPopup(
@@ -207,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Demo booking error:', err);
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
-        alert('Failed to connect to email server. Please check your connection.');
+        alert('Failed to send demo request. Please try again or email us at axentrat@gmail.com');
       });
     });
   }
@@ -232,8 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending Message...';
 
-      // Send POST request to backend email endpoint
-      fetch('http://localhost:5000/api/send-inquiry-email', {
+      // Send to Resend-powered backend on Hugging Face Spaces
+      fetch('https://hasitha14-clinic-backend.hf.space/api/send-inquiry-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message })
@@ -242,7 +241,6 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(data => {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
-
         if (data.success) {
           contactForm.reset();
           showPopup(
@@ -257,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Contact inquiry error:', err);
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
-        alert('Failed to connect to email server. Please check your connection.');
+        alert('Failed to send message. Please try again or email us at axentrat@gmail.com');
       });
     });
   }
