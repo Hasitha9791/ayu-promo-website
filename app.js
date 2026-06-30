@@ -182,8 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Scheduling Demo...';
 
-      // Send to Resend-powered backend on Hugging Face Spaces
-      fetch('https://hasitha14-clinic-backend.hf.space/api/send-demo-email', {
+      // Send via Vercel Serverless Function (uses Resend API key from Vercel env vars)
+      fetch('/api/send-demo-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, phone, date, time })
@@ -231,8 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending Message...';
 
-      // Send to Resend-powered backend on Hugging Face Spaces
-      fetch('https://hasitha14-clinic-backend.hf.space/api/send-inquiry-email', {
+      // Send via Vercel Serverless Function (uses Resend API key from Vercel env vars)
+      fetch('/api/send-inquiry-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, subject, message })
